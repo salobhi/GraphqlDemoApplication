@@ -1,0 +1,16 @@
+type Query {
+  employeeById(id: ID): Employee
+}
+
+type Employee {
+  id: ID
+  name: String
+  designation: String
+  project: Project
+}
+
+type Project {
+  id: ID
+  name: String
+  code: String
+}
